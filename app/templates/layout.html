@@ -22,7 +22,11 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+<<<<<<< HEAD
   <a class="navbar-brand" href="#">{% if user %}{{ user.username }}'s Homepage{% else %}
+=======
+  <a class="navbar-brand" href="/">{% if user %}{{ user.username }}'s Homepage{% else %}
+>>>>>>> origin/main
     <title>Welcome to My Homepage</title>
     {% endif %}</a>
   <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
@@ -30,6 +34,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
+<<<<<<< HEAD
         <li class="nav-item active">
             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -39,6 +44,18 @@
         <li class="nav-item active">
             <a class="btn btn-success pl-2 lr-2 ml-3" href="/cities/new">By Year<span class="sr-only">(current)</span></a>
         </li>
+=======
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/cities/new">Cities New <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="api/cities">Cities API JSON endpoint <span class="sr-only">(current)</span></a>
+      </li>
+
+>>>>>>> origin/main
     </ul>
   </div>
 </nav>
