@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{city.id}}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="form-control" placeholder="Name" name="name" value="{{city.name}}">
+        </div>
+        <div class="col">
+            <label for="movie">Film Title</label>
+            <input id="movie" type="text" class="form-control" placeholder="Film Title"
+                   name="movie" value="{{city.movie}}">
+        </div>
+        <div class="col">
+            <label for="year">Year</label>
+            <input id="year" type="text" class="form-control" placeholder="Year" name="year" value="{{city.year}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="age">Age</label>
+            <input id="age" type="text" class="form-control" placeholder="Age" name="age" value="{{city.age}}">
+        </div>
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}
+

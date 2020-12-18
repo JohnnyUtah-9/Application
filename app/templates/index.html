@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Actress Name</th>
+        <th scope="col">Film title</th
+        <th scope="col">Year</th>
+        <th scope="col">Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for city in cities %}
+    <tr>
+        <td><a href="view/{{city.id}}">{{ city.name }}</a></td>
+        <td>{{ city.name }}</td>
+        <td>{{ city.movie}}</td>
+        <td>{{ city.year}}</td>
+        <td>{{ city.age}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

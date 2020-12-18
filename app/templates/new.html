@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/cities/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="name">Actress Name</label>
+            <input id="name" type="text" class="form-control" placeholder="Actress Name" name="name">
+        </div>
+        <div class="col">
+            <label for="movie">Film title</label>
+            <input id="movie" type="text" class="form-control" placeholder="Film title"
+                   name="fldAbbreviation">
+        </div>
+    <button type="submit" class="btn btn-success">Success</button>
+
+</form>
+
+{% endblock %}
+
